@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:  hsl(27, 66%, 92%);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+
+.main_container{
+    width: 540px;
+    font-family: 'DM Sans', sans-serif;
+    margin-top: 181px;
+}
+
+.balance_container{
+    background-color: hsl(10, 79%, 65%);
+    height: 125px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.balance_content{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.balance_content{
+    margin-inline: 31px;
+}
+
+.balance_text h1{
+    color: hsl(33, 100%, 98%);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.balance_text p{
+    color: hsl(33, 100%, 98%);
+    font-size: 32.6px;
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+.spending_container{
+    background-color: hsl(33, 100%, 98%);
+    border-radius: 20px;
+    margin-top: 23px;
+}
+
+.spending_container h2{
+    padding: 33px 39px;
+    color: hsl(25, 47%, 15%);
+    font-size: 32px;
+}
+
+.spending_content{
+    margin-inline: 31px;
+}
+
+.chart{
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    margin-top: 26px;
+    border-bottom: 1px solid rgb(219, 209, 209);
+}
+
+.chart_component{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 33px;
+    position: relative;
+}
+
+.chart_component .day{
+    color:hsl(28, 10%, 53%);
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+.spent{
+    width: 70px;
+    height: 40px;
+    background-color: hsl(25, 47%, 15%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    color: hsl(33, 100%, 98%);
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.hide{
+    display: none;
+}
+
+.candle{
+    width: 50px;
+    height: 70px;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 5px;
+}
+
+.candle_hover{
+    cursor: pointer;
+    background-color: hsl(10, 79%, 75%);
+}
+
+.highlight {
+    background-color: hsl(186, 34%, 60%);
+}
+
+.highlight_hover{
+    background-color: hsl(186, 34%, 70%);
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 160px;
+}
+
+.total_text{
+    margin-left: 8px;
+    color: hsl(28, 10%, 53%);
+}
+
+.total_text h3{
+    font-weight: 300;
+    font-size: 18.4px;
+}
+
+.total_text p {
+    color: hsl(25, 47%, 15%);
+    font-weight: 600;
+    font-size: 48px;
+}
+
+.last{
+    text-align: end;
+    font-size: 18px;
+    color: hsl(28, 10%, 53%);
+}
+
+.last p span{
+    color: hsl(25, 47%, 15%);
+    font-weight: 700;
+}
+
+@media (max-width: 600px){
+    .main_container{
+        margin-top: 67px;
+        width: 92%;
+    }
+
+    .balance_container{
+        height: 97px;
+        border-radius: 10px;
+    }
+
+    .balance_content{
+        margin-inline: 21px;
+    }
+
+    .balance_content img{
+        width: 60px;
+    }
+
+    .balance_text h1{
+        font-size: 15px;
+    }
+
+    .balance_text p{
+        font-size: 24px;
+        margin-top: 4px;
+    }
+
+    .spending_container{
+        margin-top: 15px;
+    }
+
+    .spending_container h2{
+        padding: 25px 21px;
+        font-size: 24px;
+    }
+    
+    .spending_content{
+        margin-inline: 15px;
+    }
+
+    .candle{
+        width: 33px;
+    }
+    
+    .chart{
+        height: 230px;
+    }
+
+    .chart_component{
+        margin-bottom: 28px;
+    }
+
+    .chart_component .day{
+        font-size: 12px;
+    }
+
+    .total {
+        height: 112px;
+    }
+
+    .total_text h3{
+        font-size: 15.4px;
+    }
+
+    .total_text p{
+        font-size: 29px;
+    }
+
+    .last{
+        font-size: 15px;
+    }
+}
+
+.attribution{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+.attribution a{
+    color: hsl(10, 79%, 65%);
+}

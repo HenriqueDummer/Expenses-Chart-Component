@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Expenses chart component</title>
+
+</head>
+<body>
+
+  <main>
+    <div class="main_container">
+      <div class="balance_container">
+        <div class="balance_content">
+          <div class="balance_text">
+            <h1>My balance</h1>
+            <p>$921.48</p>
+          </div>
+          <img src="images/logo.svg" alt="logo">
+        </div>
+      </div>
+
+      <div class="spending_container">
+        <h2>Spending - Last 7 days</h2>
+        <div class="spending_content">
+          <div class="chart">
+            <div id="0" class="chart_component">
+              <div class="spent hide"></div>
+              <div class="candle"></div>
+              <div class="day">mon</div>
+            </div>
+
+            <div id="1" class="chart_component">
+              <div class="spent hide"></div>
+              <div class="candle"></div>
+              <div class="day">tue</div>
+            </div>
+
+            <div id="2" class="chart_component">
+              <div class="spent hide"></div>
+              <div class="candle"></div>
+              <div class="day">wed</div>
+            </div>
+
+            <div id="3" class="chart_component">
+              <div class="spent hide"></div>
+              <div class="candle"></div>
+              <div class="day">thu</div>
+            </div>
+
+            <div id="4" class="chart_component">
+              <div class="spent hide"></div>
+              <div class="candle"></div>
+              <div class="day">fri</div>
+            </div>
+
+            <div id="5" class="chart_component">
+              <div class="spent hide"></div>
+              <div class="candle"></div>
+              <div class="day">sat</div>
+            </div>
+
+            <div id="6" class="chart_component">
+              <div class="spent hide"></div>
+              <div class="candle"></div>
+              <div class="day">sun</div>
+            </div>
+          </div>
+
+          <div class="total">
+            <div class="total_text">
+              <h3>Total this month</h3>
+              <p id="total">$478.33</p>
+            </div>
+
+            <div class="last">
+              <p><span>+2.4%</span> <br> from last month</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/HenriqueDummer" target="_blank">Henrique Dummer</a>.
+    </div>
+  </footer> 
+
+  <script src="script.js"></script>
+</body>
+</html>
